@@ -1,0 +1,971 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+header {
+  min-height: 100vh;
+}
+
+nav,
+ul,
+.our-menu,
+.flex-reservation,
+.reviews-inner {
+  /* border: 1px solid green; */
+  display: flex;
+  align-items: center;
+}
+ul {
+  gap: 1rem;
+  padding: 10px;
+}
+ul li {
+  padding: 10px;
+  color: black;
+  list-style: none;
+}
+
+nav {
+  justify-content: space-between;
+  padding: 0% 5% 0%;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+header nav button {
+  border: 0;
+  border-radius: 20px;
+  background-color: #d0011b;
+  width: 150px;
+  height: 70px;
+  font-size: large;
+  text-transform: uppercase;
+  color: white;
+}
+
+.hero {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("./img/herobg.png"), lightgray 50% / cover no-repeat;
+  background-position: center;
+}
+
+.hero-desc {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+
+.hero-search-wrapper {
+  width: 350px;
+  height: 60px;
+  border-radius: 20px;
+  background: #fff;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.hero-search-wrapper input {
+  border: 0;
+  padding: 20px;
+  margin-left: 41px;
+}
+
+.hero-search-wrapper button {
+  border: 0;
+  background: #d0011b;
+  width: 100px;
+  display: inline-flex;
+  height: 60px;
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  color: #fff;
+}
+
+.our-menu {
+  gap: 1rem;
+  padding: 10px;
+}
+.menu-item {
+  width: 20%;
+}
+.menu-item button {
+  display: block;
+  text-align: center;
+  width: 100%;
+  border-radius: 20px;
+  padding: 1rem 0.4rem;
+  border: none;
+  background-color: #d0011b;
+}
+.menu-item button span {
+  display: block;
+}
+
+.reservation {
+  /* background: #adadad; */
+}
+.flex-reservation {
+  justify-content: space-between;
+  /* gap: 2rem; */
+}
+.flex-reservation div {
+  width: 35%;
+  height: 500px;
+  border: 1px solid red;
+}
+.flex-reservation input {
+  display: block;
+  width: 100%;
+  padding: 1rem 0.5rem;
+}
+.reservation-form button {
+  display: block;
+  width: 100px;
+  padding: 0.8rem 0.45rem;
+  margin: 0 auto;
+}
+
+/*order now  */
+.google-play {
+  width: 100px;
+}
+
+/* reviews */
+.reviews-inner {
+}
+
+.feedback-wrapper {
+  border: 1px solid red;
+  min-height: 50vh;
+  width: 60%;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+.feedback-wrapper div {
+  background: red;
+  height: 200px;
+}
+.live-review {
+  height: 40vh;
+  border: 1px solid purple;
+  width: 40%;
+}
+
+
+/* footer */
+
+footer {
+    height: 60vh;
+        
+        align-items: center;
+        justify-content: center;
+        background: rgb(27, 27, 27);
+}
+
+footer nav {
+    
+        padding: 0 0 5% 5%;
+        color: #fff;
+}
+
+.footer-left {
+    width: 40%;
+    height: 30vh;
+}
+
+.footer-left img {
+    height: 160px;
+    width: 200px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.footer-left p {
+    padding-top: 80px;
+}
+
+.footer-right {
+    width: 60%;
+    height: 30vh;
+    display: flex;
+    padding: 20% 10% 2% 2%;
+    align-items: center;
+}
+
+.footer-right .quick-links {
+   
+    
+    width: 50%;
+    clear: both;
+    max-width: 100%;
+    height: 300px;
+    
+    
+}
+
+.footer-right .quick-links h1 {
+    position: relative;
+    left: 15%;
+}
+
+.footer-right .contact-us h1 {
+    position: relative;
+    left: 5%;
+}
+.footer-right .quick-links ul {
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1%;
+}
+.footer-right .contact-us {
+    
+    min-height: 5vh;
+    width: 50%;
+    height: 300px;
+
+}
+
+.footer-right .contact-us ul {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+.credit {
+    position: relative;
+    left: 50%;
+    margin-bottom: 20px;
+    display: flex;
+    color: #fff;
+}
+
+.credit .socials img {
+    width: 80px;
+    height: 20px;
+    padding-left: 10px;
+    padding-right: 10%;
+}
+/* img{
+    width: 100%;
+}
+
+header{
+    display: flex;
+    background-color: white;
+    height: 90px;
+    
+}
+.ul{
+    display: flex;
+    list-style: none;
+    margin-left: 150px;
+    margin-right: 60px;
+    margin-top: 15px;
+    color: #000;
+}
+li{
+    margin: 25px;
+
+}
+a{
+    text-decoration: none;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding-left: 50px;
+    
+}
+.logo1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-right: px;
+    
+}
+
+.bu1{
+    width: 100px;
+    height: 30px;
+    margin-right: 20px;
+    border-radius: 10px;
+    background: #D0011B;
+    color: aliceblue;
+}
+.chow{
+    height: 80px;
+    width: 90x;
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 968px;
+    background-image: url(./img/image\ 7.png);
+
+}
+
+.heh1{
+    font-size: 80px;
+    width: 818px;
+    height: 218px;
+    color: aliceblue;
+  
+
+}
+.hep{
+    font-size: 48px;
+    color: white;
+
+    
+}
+
+
+.heh1{
+margin-left: 150px;
+margin-right: 150px;
+}
+
+.hediv1 input {
+   height: 79px;
+   border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+   width: 590px;
+   margin-left: 200px;
+   margin-top: 90px;
+
+}
+.hediv1 button {
+    height: 80px;
+    width: 90px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: #D0011B;
+
+}
+
+.hero2{
+    background-color: aqua;
+    height: 300px;
+}
+
+
+.sec3{
+    margin: 80px;
+    display: flex;
+}
+.img2{
+    width: 300px;
+}
+.aside1{
+    display: flex;
+    width: 40%;
+    padding: 10px;
+    justify-content: center;
+}
+.he2{
+    width: 60%;
+    padding: 10px;
+}
+.he2 button{
+    background: #D0011B;
+    height: 80px;
+    width: 300px;
+    font-weight: 700;
+    font-size: 38px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    color: white;
+}
+.but1{
+    display: block;
+
+    padding: .5rem 1rem;
+    margin-top: 5px;
+    background: #D0011B;
+    border-radius: 15px;
+}
+.img1{
+    width: 150px;
+    height: 125px;
+}
+
+.local-dishes-wrapper{
+    border: 1px solid blue;
+}
+
+.sec {
+display: flex;
+justify-content: space-around;
+background: green;
+}
+.bun {
+
+    background: #D0011B;
+    height: 95px;
+    align-items: center;
+    margin-left: 35%;
+    margin-right: 30%;
+    width : 400px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 38px;
+    color: white;
+    
+}
+
+.red {
+    color: #D0011B;
+    margin-left: 40px;
+}
+.red2{
+    color: #D0011B;
+    margin-left: 40px;
+}
+.gal button {
+    background: #D0011B;
+    height: 95px;
+    align-items: center;
+    margin-left: 35%;
+    margin-right: 30%;
+    margin-top: 40px;
+    width : 400px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 38px;
+    color: white;
+
+}
+.gal h2{
+   color:  #D0011B; 
+   font-weight: 700;
+    font-size: 50px;
+    margin-left: 25%;
+}
+
+.Dishes{
+    display: flex;
+    margin: 30px;
+
+}
+
+.logo2{
+    
+    height: 200px;
+    width: 200px;
+
+}
+.jollof{
+    margin-right: 150px;
+    margin-left: 200px;
+}
+.jollof2{
+    margin-left: 150px;
+}
+.reserve{
+    background-image: url('./img/Rectangle\ 64.png');
+    background-color: gray;
+    background-blend-mode: overlay;
+    height: 300px;
+}
+.reserve button{
+    background: #D0011B;
+    height: 55px;
+    width: 300px;
+    font-weight: 400;
+    font-size: 38px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 130px;
+    margin-left: 500px;
+    color: white;
+
+}
+.first{
+    display: flex;
+}
+.form{
+    margin-left: 90px;
+    margin-right: 30px;
+}
+.form2{
+
+    padding: 5px;
+}
+.first input{
+    height: 40px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+.con{
+    display: flex;
+    margin-top: 20px;
+}
+.bit button{
+    height: 40px;
+    width: 200px;
+    font-size: 20PX;
+    margin-top: 1PX;
+    border-radius: 1px;
+    margin-left: 1px;
+}
+.res {
+    background-color: white;
+    height: 40px;
+    width: 300px ;
+    margin-left: 350px;
+    border-bottom: gray;
+}
+.order{
+    
+    height: 100px;
+}
+.order button{
+    
+  font-size: 30px;
+  background: #D0011B;
+  height: 60px;
+  width: 200px;
+  font-weight: 200;
+        font-size: 20px;
+        border: none;
+        border-radius: 10px;
+        margin-top: 40px;
+        margin-left: 600px;
+        color: white;
+}
+.text {
+    margin-left: 300px;
+    margin-top: 20px;
+}
+.sec6{
+    margin: 80px;
+    display: flex;
+    height: 500px;
+    margin-top: 1px;
+    
+}
+
+.he6{
+    width: 50%;
+    padding: 10px;
+    height: 500px;
+    background-image: url('./img/image\ 10.png');
+    
+}
+.aside2{
+    display: flex;
+    width: 50%;
+    padding: 10px;
+    justify-content: center;
+    height: 500px;
+    background-color: gray;
+    margin-left: 50px;
+}
+.aside2 h2{
+     
+ font-size: 60px;
+ font-weight: 100;
+ line-height: 60px;
+ margin-left: 10px;
+ color: black;
+ 
+ 
+
+}.sec62{
+display: flex;
+}
+
+.ptag{
+    margin-top: 300px;
+    margin-right: 300px;
+}
+.revi{
+    
+    height: 500px;
+}
+.review {
+    height: 150px;
+    margin-top: 1px;
+}
+.review button{
+        background: #D0011B;
+        height: 95px;
+        align-items: center;
+        margin-left: 35%;
+        margin-right: 30%;
+        margin-top: 40px;
+        width : 400px;
+        border: none;
+        border-radius: 10px;
+        font-weight: 500;
+        font-size: 20px;
+        color: white;
+    
+}
+.rev-con{
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 300px;
+    row-gap: 10px;
+    position: relative;
+    left: 30px;
+    right: 30px;
+    top: 5px;
+    bottom: 30px;
+}
+
+.revcon1{
+    display: flex;
+    margin-left: 10px;
+}
+
+.rev-con .revbox{
+    border-radius: 30px;
+        background: #FFF;
+        box-shadow: 16px 10px 25px 10px rgba(0, 0, 0, 0.15);
+        width: 250px;
+        height: 130px;
+        margin-left: 20px;
+            
+}
+
+.rev-con .revbox img{
+    position: relative;
+    left: 20px;
+    top: 20px;
+    float: left;
+    width: 50px;
+        height: 50px;
+        flex-shrink: 0;
+}
+
+.rev-con .revbox h3{
+    color: #000;
+        font-family: Open Sans Hebrew;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        position: relative;
+        top: 20px;
+        left: 30px;
+}
+
+.rev-con .revbox h2 {
+    color: #000;
+    font-family: Open Sans Hebrew;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    
+    position: relative;
+    left:30px;
+    top: 3px;
+
+    
+}
+
+.rev-con .revbox h1 p{
+    color: #000;
+        font-family: Open Sans Hebrew;
+        font-size: 7px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 15px;
+        float: right;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 67;
+        -webkit-box-orient: horizontal;
+}
+
+.rev-con p{
+    font-size: 13px;
+    font-family: open san sans-serif;
+    font-weight: 400px;
+    .rev-con{
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 400px;
+    row-gap: 10px;
+    position: relative;
+    left: 30px;
+    right: 30px;
+    top: 100px;
+    
+    
+}
+.rev-con .revbox{
+    border-radius: 30px;
+        background: #FFF;
+        box-shadow: 16px 10px 25px 10px rgba(0, 0, 0, 0.15);
+        width: 250px;
+            height: 150px;
+            flex-shrink: 0;
+          
+}
+.rev-con .revbox img{
+    position: relative;
+    left: 20px;
+    top: 20px;
+    float: left;
+    width: 50px;
+        height: 50px;
+        flex-shrink: 0;
+}
+
+.rev-con .revbox h3{
+    color: #000;
+        font-family: Open Sans Hebrew;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        
+        position: relative;
+        
+        top: 20px;
+
+        left: 30px;
+}
+
+.rev-con .revbox h2 {
+    color: #000;
+    font-family: Open Sans Hebrew;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    
+    position: relative;
+    left:30px;
+    top: 3px;
+
+    
+}
+
+.rev-con .revbox h1 p{
+    color: #000;
+        font-family: Open Sans Hebrew;
+        font-size: 7px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 15px;
+        float: right;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 67;
+        -webkit-box-orient: horizontal;
+}
+
+.rev-con p{
+    font-size: 13px;
+    font-family: open san sans-serif;
+    font-weight: 400px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+.review .button h1 {color: #FFF;
+    text-align: center;
+    font-family: Open Sans Hebrew;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border: 0;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.review h1{
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.review h1 span{
+    margin-left: 15px;
+    color: #fac031;
+    font-family: mv boli;
+}
+
+.review h1 span::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #fac031;
+    position: relative;
+    bottom: 15px;
+    display: block;
+}
+
+    margin-left: 5px;
+}
+.review .button h1 {color: #FFF;
+    text-align: center;
+    font-family: Open Sans Hebrew;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border: 0;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.review h1{
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.review h1 span{
+    margin-left: 15px;
+    color: #fac031;
+    font-family: mv boli;
+}
+
+.review h1 span::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #fac031;
+    position: relative;
+    bottom: 15px;
+    display: block;
+}
+.container{
+    display: flex;
+}
+.right-div{
+    
+    height: 480px;
+    width: 600px;
+    margin-left: 150px;
+    
+}
+.write{
+    margin-top: 50px;
+    margin-left: 70px;
+}
+.write p{
+    font-family: Open Sans Hebrew;
+font-size: 32px;
+font-weight: 400;
+line-height: 44px;
+letter-spacing: 0em;
+text-align: center;
+
+}
+.write button{
+    background-color: white;
+width: 184px;
+height: 73px;
+font-weight: 500px;
+font-size: 28px;
+left: 410px;
+border-radius: 10px;
+color: rgb(180, 170, 170);
+}
+.revbar {
+    margin-left: 150px;
+    margin-top: 50px;
+}
+.revbar input{
+    width: 350px;
+    height: 50px;
+    border-radius: 15px;
+}
+
+
+
+
+ footer{
+
+    padding: 30px 0 0 20px;
+    background: #282828;
+    width: 1345px;
+    height: 590px;
+    flex-shrink: 0;
+}
+.bt button{
+    height: 90px;
+    width: 300px;
+    margin-top: 100px;
+    margin-left: 150px;
+    border-radius: 10px;
+    border-style: none;
+}
+.bt1 button{
+    height: 90px;
+    width: 300px;
+    margin-top: 100px;
+    margin-left: 150px;
+    border-radius: 20px;
+    border-style: none;
+}
+.opay{
+    height: 400px;
+}
+.button1{
+    margin-left: 499px;
+}
+.pay{
+    background-image: url('./img/Rectangle\ 64.png');
+    height: 400px;
+}
+.pay3{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+}
+.trans{
+    margin-top: 150px;
+    display: flex;
+    justify-content: end;
+    height: 70px;
+    width :250px;
+    border-radius: 6px;
+}
+.trans1{
+    margin-top: 150px;
+    height: 100px;
+    width :300px;
+} */
